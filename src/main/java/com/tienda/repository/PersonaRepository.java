@@ -1,13 +1,14 @@
 
 package com.tienda.repository;
+import com.tienda.entity.Persona;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import com.tienda.entity.personas;
 /**
- *
- * @author Usuario
- */
+*
+* @author usuario
+*/
 @Repository
-public interface PersonaRepository extends CrudRepository<personas,Long>{
-    
+public interface PersonaRepository extends CrudRepository<Persona,Long>{
+
+
 }

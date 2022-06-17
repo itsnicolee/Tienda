@@ -1,5 +1,5 @@
-
 package com.tienda.entity;
+
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,27 +8,28 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
 /**
  *
- * @author Usuario
+ * @author usuario
  */
 
 @Entity
 @Table(name = "personas")
-public class personas implements Serializable{
+public class Persona implements Serializable {
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nombre;
     private String apellido1;
     private String apellido2;
     private String telefono;
     private String email;
-    
+
     @ManyToOne
-    @JoinColumn(name="paises_id")
+    @JoinColumn(name = "paises_id")
     private Pais pais;
-    private GenerationType strategy;
 
     public long getId() {
         return id;
@@ -86,12 +87,4 @@ public class personas implements Serializable{
         this.pais = pais;
     }
 
-    public GenerationType getStrategy() {
-        return strategy;
-    }
-
-    public void setStrategy(GenerationType strategy) {
-        this.strategy = strategy;
-    }
-    
 }
