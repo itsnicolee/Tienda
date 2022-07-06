@@ -26,11 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-
-
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -42,9 +37,6 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -53,13 +45,13 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.4.Final</version>
+            <version>5.6.9.Final</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
-            <version>2.6.1</version>
+            <version>2.7.0</version>
             <type>jar</type>
         </dependency>
         <dependency>
@@ -69,18 +61,9 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.25</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>8.0.29</version>
         </dependency>
     </dependencies>
-
-
-
-
-
     <build>
         <plugins>
             <plugin>
