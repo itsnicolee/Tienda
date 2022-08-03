@@ -135,7 +135,7 @@ public class Persona implements Serializable {
         return new ArrayList<>();
     }
     
-    public List<String> getPermissionList(){
+    public List<String> getPermissionsList(){
         if (this.permissions.length() > 0){
             return Arrays.asList(this.permissions.split(","));
         }

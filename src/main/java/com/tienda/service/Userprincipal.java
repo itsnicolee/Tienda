@@ -28,7 +28,7 @@ public class Userprincipal implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
         //Extraxt list of permissions (name)
-        this.persona.getPermissionList().forEach(p -> {
+        this.persona.getPermissionsList().forEach(p -> {
             GrantedAuthority authority = new SimpleGrantedAuthority(p);
             authorities.add(authority);
         });
